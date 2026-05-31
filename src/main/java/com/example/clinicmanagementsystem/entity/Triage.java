@@ -27,9 +27,7 @@ public class Triage {
     @Enumerated(EnumType.STRING)
     private UrgencyLevel urgencyLevel;
 
-    public enum UrgencyLevel{
-        LOW, MEDIUM, HIGH
-    }
+
 
     @Column(nullable = false)
     private LocalDateTime createdAt;

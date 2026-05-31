@@ -8,7 +8,7 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "doctor")
+@Table(name = "doctors")
 public class Doctor {
 
     @Id
@@ -19,8 +19,6 @@ public class Doctor {
     @OneToOne
     @ToString.Exclude
     private User user;
-
-    private String name;
 
     private String phone;
 

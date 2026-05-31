@@ -10,7 +10,7 @@ import java.time.LocalDate;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "patient")
+@Table(name = "patients")
 public class Patient {
 
     @Id
@@ -21,8 +21,6 @@ public class Patient {
     @OneToOne
     @ToString.Exclude
     private User user;
-
-    private String name;
 
     private String phone;
 

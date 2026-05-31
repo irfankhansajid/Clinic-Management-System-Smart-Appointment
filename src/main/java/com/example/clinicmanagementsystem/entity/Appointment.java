@@ -40,10 +40,6 @@ public class Appointment {
     @Enumerated(EnumType.STRING)
     private AppointmentStatus status;
 
-    public enum AppointmentStatus {
-        SCHEDULED, CANCELLED, RESCHEDULED, COMPLETED, NO_SHOW
-    }
-
     @Column(nullable = false)
     private LocalDateTime createdAt;
 

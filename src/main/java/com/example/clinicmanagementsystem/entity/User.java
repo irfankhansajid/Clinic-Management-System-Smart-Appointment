@@ -35,15 +35,5 @@ public class User {
         this.createdAt = LocalDateTime.now();
     }
 
-    @OneToOne(mappedBy = "user")
-    @ToString.Exclude
-    private Patient patient;
 
-    @OneToOne(mappedBy = "user")
-    @ToString.Exclude
-    private Doctor doctor;
-
-    public enum Role {
-        ADMIN, DOCTOR, PATIENT
-    }
 }
